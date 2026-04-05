@@ -1,0 +1,31 @@
+backend:
+  name: github
+  repo: AnurajS23/AnurajS
+  branch: main
+
+media_folder: "images"
+public_folder: "images"
+
+collections:
+  - name: "portfolio"
+    label: "Portfolio Data"
+    files:
+      - file: "content/data.json"
+        label: "Main Website Content"
+        name: "main_data"
+        fields:
+          - { name: "heroName", label: "Hero Name", widget: "string" }
+          - { name: "heroTitle", label: "Hero Title", widget: "string" }
+          - { name: "heroDesc", label: "Hero Description", widget: "text" }
+          - { name: "resumeLink", label: "Resume Google Drive Link", widget: "string" }
+          - { name: "aboutText", label: "Professional Summary", widget: "text" }
+          - name: "experience"
+            label: "Work Experience"
+            widget: "list"
+            fields:
+              - { name: "role", label: "Role", widget: "string" }
+              - { name: "company", label: "Company", widget: "string" }
+              - { name: "duration", label: "Duration", widget: "string" }
+              - name: "bullets"
+                label: "Responsibilities (one per line)"
+                widget: "list"

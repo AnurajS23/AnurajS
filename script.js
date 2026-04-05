@@ -88,4 +88,55 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // 5. Load CMS Content Dynamically
+    fetch('content/data.json')
+        .then(response => response.json())
+        .then(data => {
+            // Update Hero Section
+            if (data.heroName) document.getElementById('hero-name').innerHTML = `${data.heroName}<span class="dot">.</span>`;
+            if (data.heroTitle) document.getElementById('hero-title').textContent = data.heroTitle;
+            if (data.heroDesc) document.getElementById('hero-desc').textContent = data.heroDesc;
+            if (data.resumeLink) document.getElementById('hero-resume-link').href = data.resumeLink;
+            
+            // Update About Section
+            if (data.aboutText) document.getElementById('about-text').textContent = data.aboutText;
+            
+            // Update Experience Timeline
+            if (data.experience && Array.isArray(data.experience)) {
+                const timeline = document.getElementById('experience-timeline');
+                timeline.innerHTML = ''; // Clear default hardcoded content
+                
+                data.experience.forEach((exp) => {
+                    const item = document.createElement('div');
+                    item.className = 'timeline-item reveal active';
+                    
+                    let bulletsHtml = '';
+                    if (exp.bullets && Array.isArray(exp.bullets)) {
+                        bulletsHtml = exp.bullets.map(b => {
+                           let text = typeof b === 'string' ? b : (b.point || ''); 
+                           return `<li>${text}</li>`;
+                        }).join('');
+                    }
+
+                    item.innerHTML = `
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3>${exp.role || ''}</h3>
+                                    <h4>${exp.company || ''}</h4>
+                                </div>
+                                <span class="timeline-date">${exp.duration || ''}</span>
+                            </div>
+                            <ul class="timeline-details">
+                                ${bulletsHtml}
+                            </ul>
+                        </div>
+                    `;
+                    timeline.appendChild(item);
+                });
+            }
+        })
+        .catch(err => console.log('CMS data not loaded, using fallback HTML content', err));
 });

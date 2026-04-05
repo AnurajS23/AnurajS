@@ -1,0 +1,37 @@
+{
+  "heroName": "Anuraj S",
+  "heroTitle": "Logistics & Supply Chain Professional",
+  "heroDesc": "Aspiring Logistics Professional | Experience in Customer Engagement | Seeking Opportunities in Supply Chain & Logistics",
+  "resumeLink": "https://drive.google.com/file/d/1wco12xOY0ddre9n2f_s7bDMNws0Nkq93/view?usp=sharing",
+  "aboutText": "To contribute efficiently in the logistics industry by applying my knowledge, adaptability, and customer service skills while continuously learning and growing in the field. Seeking a logistics role to apply my skills and grow in the industry. To build a successful career in logistics and sales by utilizing my skills in communication, teamwork, and operations management to drive organizational success.",
+  "experience": [
+    {
+      "role": "Operation Assistant",
+      "company": "Safeexpress private limited, Chennai",
+      "duration": "Dec 2025 - Mar 2026",
+      "bullets": [
+        "Ensuring accurate inbound operations by supervising, scanning unloading activities and verifying shipments as per documentation.",
+        "Coordinating with warehouse and delivery teams to ensure timely and correct movement of goods.",
+        "Monitored handling processes to maintain safety, accuracy, and operational efficiency during unloading and dispatch preparation."
+      ]
+    },
+    {
+      "role": "ERP TESTING (Interns)",
+      "company": "Eff Logistics",
+      "duration": "Oct 2025 - Nov 2025",
+      "bullets": [
+        "Outbound Order Accuracy - Test whether the system shows the correct picking details, customer order info, and dispatch confirmation for outbound shipments.",
+        "Package Scanning Verification - Ensure the barcode scanner correctly identifies each package, matches it with the ERP record, and flags any wrong or missing items."
+      ]
+    },
+    {
+      "role": "Caller Executive",
+      "company": "Aabasoft Technologies India Pvt Ltd",
+      "duration": "Jan 2025 - Jul 2025",
+      "bullets": [
+        "Handled inbound customer communication professionally.",
+        "Provided detailed information about services and solutions."
+      ]
+    }
+  ]
+}
