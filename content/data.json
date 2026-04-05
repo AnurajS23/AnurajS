@@ -20,16 +20,17 @@
       "company": "Eff Logistics , Kochi ",
       "duration": "Oct 2025 - Nov 2025",
       "bullets": [
-        "Outbound Order Accuracy - Test whether the system shows the correct picking details, customer order info, and dispatch confirmation for outbound shipments.",
+        "Outbound And Inbound Order Accuracy - Test whether the system shows the correct picking details, customer order info, and dispatch confirmation for outbound shipments.",
         "Package Scanning Verification - Ensure the barcode scanner correctly identifies each package, matches it with the ERP record, and flags any wrong or missing items."
       ]
     },
     {
       "role": "Caller Executive",
-      "company": "Aabasoft Technologies India Pvt Ltd , Infopark ",
+      "company": "Aabasoft Technologies India Pvt Ltd , Infopark, Kochi  ",
       "duration": "Jan 2025 - Jul 2025",
       "bullets": [
         "Handled inbound customer communication professionally.",
+        " Developed communication , negotiation and Followup skill",
         "Provided detailed information about services and solutions."
       ]
     }
